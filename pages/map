@@ -63,7 +63,9 @@
             <div class="map">
                 <div class="demo_1 map3" style="">            
                     <img alt="map_image" id="map_image" src="http://stc.mallmaverick.com/system/properties/maps/000/000/001/original/stc_map_2015_(1).jpg?1440428507" />   
-                    	
+                    <div class="marker" id="scroll_to_marker" data-coords="100,100">
+                	    Custom marker
+                    </div>  	
         		</div>
             </div>
         </div>
@@ -123,6 +125,7 @@
                     position: 'center'
                 }
             });
+            custom_marker();
         }
         loadMallDataCached(renderAll); 
     })
